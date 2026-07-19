@@ -1,8 +1,8 @@
 from donation import donor
 def main():
-    d = input("Enter donor blood group: ")
-    r = input("Enter recipient blood group: ")
-    b = blood(d.upper(), r.upper())
+    d = input("Enter donor blood group: ").strip().upper()
+    r = input("Enter recipient blood group: ").strip().upper()
+    b = blood(d, r)
     b.cangive()
 class blood:
     def __init__(self, donor, recipient):
